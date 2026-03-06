@@ -6,7 +6,6 @@ func twoSum(of arr: [Int], target trgt: Int) {
     if arr.count < 2 { print("The source data is not in correct format"); return }
     var dictData: [Int: Int] = [:]
     for (index, value) in arr.enumerated() {
-        print(index, value)
         let diff: Int = (trgt - value)
         if let storedValue = dictData[diff] {
             print("Two Sum is - [\(storedValue), \(index)]")
@@ -18,4 +17,4 @@ func twoSum(of arr: [Int], target trgt: Int) {
     
 }
 
-twoSum(of: [2, 11, 15, 7], target: 9)
+twoSum(of: [2, 7, 15, 11], target: 9)
